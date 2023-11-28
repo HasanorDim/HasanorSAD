@@ -1,0 +1,33 @@
+
+<!-- Header of the HTML -->
+<%- include('include/_header') %>
+
+<div class="img"></div>
+<div class="container">
+    <h2>Register</h2>
+    <h3>Enter your credentials</h3>
+    <form class="log" method="post" action="/register">
+
+        <input type="text" placeholder="Username" name="reusername">
+        <% if(typeof errors !== 'undefined' && errors && errors.reusername) { %>
+            <span class="error-message"><%= errors.reusername.msg %></span>
+        <% } %> 
+        <input type="password" placeholder="Password" name="repassword">
+        <% if(typeof errors !== 'undefined' && errors && errors.repassword) { %>
+            <span class="error-message" ><%= errors.repassword.msg %></span>
+        <% } %>
+        <input type="email" placeholder="Email" name="email">
+        <% if(typeof errors !== 'undefined' && errors && errors.email) { %>
+            <span class="error-message" ><%= errors.email.msg %></span>
+        <% } %>
+        <input type="text" placeholder="Address" name="address">
+        <% if(typeof  errors !== 'undefined' && errors && errors.address) { %>
+            <span class="error-message" ><%= errors.address.msg %></span>
+        <% } %>
+        
+        <a href="login">Login</a>
+        <button type="submit">LOGIN</button>
+    </form>
+</div>    
+
+<%- include('include/_footer') %></form>

@@ -1,0 +1,24 @@
+
+<!-- Header of the HTML -->
+<%- include('include/_header') %>
+
+<div class="img"></div>
+<div class="container">
+    <h2>Login</h2>
+    <h3>Enter your credentials</h3>
+    <form class="log" method="post" action="/login">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" name="password">
+
+        <% if(messages.error) { %>
+            <div class="alert alert-danger">
+                <strong id="error-message"><%= messages.error %> </strong>
+            </div>
+        <% } %>
+
+        <a href="register">Register</a>
+        <button type="submit">LOGIN</button>
+    </form>
+</div>    
+
+<%- include('include/_footer') %>

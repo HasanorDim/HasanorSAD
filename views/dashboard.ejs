@@ -1,0 +1,247 @@
+
+<%- include('include/_dheader') %>
+
+
+ <!-- Start container -->
+ <div class="container">
+
+    <!-- Sidebar Section -->
+    <aside>
+       <div class="toggle">
+           <div class="logo">  
+               <img src="img/dimlogo-removebg.png" alt="Dim logo">
+               <h2>Tri<span class="danger">M</span></h2>
+           </div>
+           <div class="close" id="close-btn">
+               <span class="material-icons-sharp">
+                   close
+               </span>
+           </div>
+       </div>
+
+       <div class="sidebar">
+           <a href="#" class="active">   
+               <span class="material-icons-sharp">
+                   dashboard
+               </span>
+               <h3>Dashboard</h3>
+           </a>
+           <a href="#">   
+               <span class="material-icons-sharp">
+                   receipt_long
+               </span>
+               <h3>History</h3>
+           </a>
+           <a href="#">   
+               <span class="material-icons-sharp">
+                   insights
+               </span>
+               <h3>Analytics</h3>
+           </a>
+           <a href="#">   
+               <span class="material-icons-sharp">
+                   inventory
+               </span>
+               <h3>Sale List</h3>
+           </a>
+           <a href="#">   
+               <span class="material-icons-sharp">
+                   person_outline
+               </span>
+               <h3>Product</h3>
+           </a>
+           <a href="#">   
+               <span class="material-icons-sharp">
+                   person_outline
+               </span>
+               <h3>User</h3>
+           </a>
+           <a href="#">    
+               <span class="material-icons-sharp">
+                   settings
+               </span>
+               <h3>Settings</h3>
+           </a>
+           <a href="#">   
+               <span class="material-icons-sharp">
+                   logout
+               </span>
+               <h3>Logout</h3>
+           </a>
+       </div>
+   </aside>
+   <!-- End of sidebar Section -->
+
+
+   <main> <!-- Start main -->
+       <main>
+           <h1>Dashboard</h1>     
+
+             <!-- Insights -->
+       <ul class="insights">
+           <li>
+               <span class="material-symbols-outlined bx">
+                   category
+               </span>
+               <span class="info">
+                   <h3>10</h3>
+                   <p>Category</p>
+               </span>
+           </li>
+           <!-- <li>
+               <i class='bx bx-show-alt'></i>
+               <span class="info">
+                   <h3>3,944</h3>
+                   <p>Site Visited</p>
+               </span>
+           </li>
+           <li>
+               <i class='bx bx-line-chart'></i>
+               <span class="info">
+                   <h3>14,721</h3>
+                   <p>Searches</p>
+               </span>
+           </li> -->
+           <li>
+               <span class="material-symbols-outlined bx">
+                   paid
+               </span>
+               <span class="info">
+                   <h3>$6,742</h3>
+                   <p>Total Sales</p>
+               </span>
+           </li>
+
+           <li>
+               <span class="material-symbols-outlined bx">
+                   person
+               </span>
+               <span class="info">
+                   <h3>10</h3>
+                   <p>Total Client</p>
+               </span>
+           </li>
+
+           <li>
+               <span class="material-symbols-outlined bx">
+                   change_circle
+               </span>
+               <span class="info">
+                   <h3>10</h3>
+                   <p>Refund</p>
+               </span>
+           </li>
+
+       </ul>
+       <!-- End of insights -->
+
+           <!-- Analyses -->
+           <!-- <div class="analyse">
+               <div class="sales">
+                   <div class="status">
+                       <div class="info">
+                           <h3>Total Sales</h3>
+                           <h1>$97,999</h1>
+                       </div>
+                       <div class="progress">
+                           <svg>
+                               <circle cx="38" cy="38" r="38"></circle>
+                           </svg>
+                           <div class="percentage">
+                               <p>+81%</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="visits">
+                   <div class="status">
+                       <div class="info">
+                           <h3>Site visit</h3>
+                           <h1>100,000</h1>
+                       </div>
+                       <div class="progress">
+                           <svg>
+                               <circle cx="38" cy="38" r="38"></circle>
+                           </svg>
+                           <div class="percentage">
+                               <p>+75%</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="search">
+                   <div class="status">
+                       <div class="info">
+                           <h3>Searches</h3>
+                           <h1>50,000</h1>
+                       </div>
+                       <div class="progress">
+                           <svg>
+                               <circle cx="38" cy="38" r="38"></circle>
+                           </svg>
+                           <div class="percentage">
+                               <p>+63%</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div> -->
+           <!-- End of analytics -->
+
+
+           <!-- Recent Orders Table -->
+           <div class="transaction">
+               <h2>Transactions</h2>
+               <table>
+                   <thead>
+                       <tr>
+                           <th>Date</th>
+                           <th>TansactionID</th>
+                           <th>Client</th>
+                           <th>Payment</th>
+                           <th>Product</th>
+                           <th>Payment</th>
+                       </tr>
+                   </thead>
+                   <tbody></tbody>
+               </table>
+               <a href="#">Show All</a>
+           </div>
+           <!-- End of Recent Orders -->
+            <!-- Recent Orders Table -->
+            <div class="client">
+               <h2>Client</h2>
+               <table>
+                   <thead>
+                       <tr>
+                           <th>TansactionID</th>
+                           <th>Client</th>
+                           <th>Payment</th>
+                           <th>Product</th>
+                           <th>Payment</th>
+                       </tr>
+                   </thead>
+                   <tbody></tbody>
+               </table>
+           </div>
+           <!-- End of Recent Orders -->
+           
+
+           
+       </main>
+
+
+
+
+   </main> <!-- End main -->
+   
+</div> <!--End container -->
+
+<script src="index.js"></script>    
+<script src="orders.js"></script> 
+
+
+
+
+
+<%- include('include/_footer') %>

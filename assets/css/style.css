@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(27, 27, 65);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50% );
+    margin: 0 20px;
+    padding: 10px 30px 44px;
+    border-radius: 1.25rem;
+    background: rgba(245, 222, 179, 0.6);
+    text-align: center;
+    
+}
+
+.container > h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 0 12px;
+}
+
+.container > h3{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 0 12px;
+}
+
+.log{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.log > input, .log > button{
+    width: 100%;
+    height: 50px;    
+}
+
+.log > input{
+    border: 2px solid #ebebee;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 1.25rem;
+    padding: 12px;
+}
+.log > input:hover{
+    cursor: pointer;
+    border: 2px solid #282897;
+}
+
+.log > button{
+    width: 100%;
+    border: none;
+    background:#282897;
+    padding: 0 16 px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 1.25rem;
+}
+
+.log > button:hover{
+    cursor: pointer;
+    background:#4545eb;
+}
+
+.log > a{
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.log > a:hover{
+    cursor: pointer;
+    color: #282897;
+}
+
+
+@keyframes rotate {
+    /* 0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+     */
+     
+    50% {
+        transform: translateX(-15px);
+    }
+
+}
+
+.img{
+    animation: rotate 3s infinite;
+}
+
+
+
+/* @keyframes rotate {
+    100% {
+        background-position: 15% 50%;
+    }
+    
+}
+body{
+    animation: rotate 2s infinite;
+} */
+
+@media(width >= 500px){
+    body{
+        margin: 0;
+    }
+    .container{
+        width: 400px;
+    }
+}
+
+
+#error-message{
+    color: red;
+    font-size: 1rem;
+}
+
+.error-message{
+    display: flex;
+    align-items: start;
+    color: red;
+    font-size: 1rem;
+    margin: -15px 0 0 10px;
+
+}
